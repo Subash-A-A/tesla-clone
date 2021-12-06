@@ -11,6 +11,7 @@ function Home() {
         backgroundImage="model-s.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
+        showDownArrow="block"
       />
       <Section
         title="Model Y"
@@ -18,6 +19,7 @@ function Home() {
         backgroundImage="model-y.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
+        showDownArrow="none"
       />
       <Section
         title="Model 3"
@@ -25,6 +27,7 @@ function Home() {
         backgroundImage="model-3.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
+        showDownArrow="none"
       />
       <Section
         title="Model X"
@@ -32,6 +35,23 @@ function Home() {
         backgroundImage="model-x.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
+        showDownArrow="none"
+      />
+      <Section
+        title="Solar Panels"
+        description="Lowest Cost Solar Panels in America"
+        backgroundImage="solar-panel.jpg"
+        leftButtonText="Order Now"
+        rightButtonText="Learn More"
+        showDownArrow="none"
+      />
+      <Section
+        title="Solar Roof"
+        description="Produce Clean Energy From Your Roof"
+        backgroundImage="solar-roof.jpg"
+        leftButtonText="Order Now"
+        rightButtonText="Learn More"
+        showDownArrow="none"
       />
     </Container>
   );

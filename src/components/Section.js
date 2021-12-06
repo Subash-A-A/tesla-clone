@@ -7,6 +7,7 @@ function Section({
   leftButtonText,
   rightButtonText,
   backgroundImage,
+  showDownArrow,
 }) {
   return (
     <Wrap bgImage={backgroundImage}>
@@ -19,7 +20,10 @@ function Section({
           <LeftButton>{leftButtonText}</LeftButton>
           <RightButton>{rightButtonText}</RightButton>
         </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg"></DownArrow>
+        <DownArrow
+          src="/images/down-arrow.svg"
+          display={showDownArrow}
+        ></DownArrow>
       </Buttons>
     </Wrap>
   );
@@ -82,6 +86,7 @@ const RightButton = styled(LeftButton)`
   color: black;
 `;
 const DownArrow = styled.img`
+  display: ${(props) => `${props.display}`};
   margin-top: 20px;
   margin-bottom: 20px;
   height: 40px;

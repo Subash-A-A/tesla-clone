@@ -11,7 +11,7 @@ function Home() {
         backgroundImage="model-s.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
-        showDownArrow="block"
+        showDownArrow
       />
       <Section
         title="Model Y"
@@ -19,7 +19,6 @@ function Home() {
         backgroundImage="model-y.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
-        showDownArrow="none"
       />
       <Section
         title="Model 3"
@@ -27,7 +26,6 @@ function Home() {
         backgroundImage="model-3.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
-        showDownArrow="none"
       />
       <Section
         title="Model X"
@@ -35,7 +33,6 @@ function Home() {
         backgroundImage="model-x.jpg"
         leftButtonText="Custom Order"
         rightButtonText="Existing Inventory"
-        showDownArrow="none"
       />
       <Section
         title="Solar Panels"
@@ -43,7 +40,6 @@ function Home() {
         backgroundImage="solar-panel.jpg"
         leftButtonText="Order Now"
         rightButtonText="Learn More"
-        showDownArrow="none"
       />
       <Section
         title="Solar Roof"
@@ -51,7 +47,12 @@ function Home() {
         backgroundImage="solar-roof.jpg"
         leftButtonText="Order Now"
         rightButtonText="Learn More"
-        showDownArrow="none"
+      />
+      <Section
+        title="Accessories"
+        description=""
+        backgroundImage="accessories.jpg"
+        leftButtonText="Shop Now"
       />
     </Container>
   );

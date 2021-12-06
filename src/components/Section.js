@@ -18,12 +18,9 @@ function Section({
       <Buttons>
         <ButtonGroup>
           <LeftButton>{leftButtonText}</LeftButton>
-          <RightButton>{rightButtonText}</RightButton>
+          {rightButtonText && <RightButton>{rightButtonText}</RightButton>}
         </ButtonGroup>
-        <DownArrow
-          src="/images/down-arrow.svg"
-          display={showDownArrow}
-        ></DownArrow>
+        {showDownArrow && <DownArrow src="/images/down-arrow.svg"></DownArrow>}
       </Buttons>
     </Wrap>
   );
@@ -86,7 +83,6 @@ const RightButton = styled(LeftButton)`
   color: black;
 `;
 const DownArrow = styled.img`
-  display: ${(props) => `${props.display}`};
   margin-top: 20px;
   margin-bottom: 20px;
   height: 40px;

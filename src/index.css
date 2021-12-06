@@ -9,18 +9,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 h1 {
   font-size: 40px;
   font-weight: bold;
 }
 p {
-  font-size: 14px;
-  font-weight: 500;
-  color: #5c5d61;
+  font-size: 16px;
 }
-body {
-  width: 100%;
-  overflow-x: hidden;
+a {
+  text-decoration: none;
 }
 
 @keyframes bounce {
